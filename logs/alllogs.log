@@ -1,0 +1,101 @@
+[2020-10-08T15:23:34.789] [ERROR] default - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.vendor_id WHERE sis_community_emp_vendors_payments.sis_community_id=6 AND sis_c' at line 1
+    at Query.Sequence._packetToError (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:201:25)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:701:24)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:123:8)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.vendor_id WHERE sis_community_emp_vendors_payments.sis_community_id=6 AND sis_c' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM sis_community_emp_vendors_payments JOIN sis_community_employees ON sis_community_emp_vendors_payments.emp_id=sis_community_employees.emp_id  JOIN sis_community_vendors.vendor_id=sis_community_employees.vendor_id WHERE sis_community_emp_vendors_payments.sis_community_id=6 AND sis_community_emp_vendors_payments.date='2020-10'"
+}
+[2020-10-08T15:24:13.675] [ERROR] default - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.vendor_id WHERE sis_community_emp_vendors_payments.sis_community_id=6 AND sis_c' at line 1
+    at Query.Sequence._packetToError (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:201:25)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:701:24)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:123:8)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.vendor_id WHERE sis_community_emp_vendors_payments.sis_community_id=6 AND sis_c' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM sis_community_emp_vendors_payments JOIN sis_community_employees ON sis_community_emp_vendors_payments.emp_id=sis_community_employees.emp_id  JOIN sis_community_vendors.vendor_id=sis_community_employees.vendor_id WHERE sis_community_emp_vendors_payments.sis_community_id=6 AND sis_community_emp_vendors_payments.date='2020-10'"
+}
+[2020-10-08T15:25:00.425] [INFO] default - Server is running on 5000
+[2020-10-08T15:25:00.431] [INFO] default - Connection Success...
+[2020-10-08T15:25:28.985] [ERROR] default - Error: ER_BAD_FIELD_ERROR: Unknown column 'sis_community_emp_vendors_payments.date' in 'where clause'
+    at Query.Sequence._packetToError (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:201:25)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:701:24)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:123:8)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'sis_community_emp_vendors_payments.date' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: "SELECT * FROM sis_community_emp_vendors_payments JOIN sis_community_employees ON sis_community_emp_vendors_payments.emp_id=sis_community_employees.emp_id WHERE sis_community_emp_vendors_payments.sis_community_id=6 AND sis_community_emp_vendors_payments.date='2020-10'"
+}
+[2020-10-08T15:26:31.230] [INFO] default - Server is running on 5000
+[2020-10-08T15:26:31.236] [INFO] default - Connection Success...
+[2020-10-08T15:29:37.370] [INFO] default - Server is running on 5000
+[2020-10-08T15:29:37.377] [INFO] default - Connection Success...
+[2020-10-08T15:31:32.278] [INFO] default - Server is running on 5000
+[2020-10-08T15:31:32.284] [INFO] default - Connection Success...
+[2020-10-08T15:31:55.137] [INFO] default - Server is running on 5000
+[2020-10-08T15:31:55.143] [INFO] default - Connection Success...
+[2020-10-08T15:32:44.347] [INFO] default - Server is running on 5000
+[2020-10-08T15:32:44.353] [INFO] default - Connection Success...
+[2020-10-08T15:33:44.137] [INFO] default - Server is running on 5000
+[2020-10-08T15:33:44.143] [INFO] default - Connection Success...

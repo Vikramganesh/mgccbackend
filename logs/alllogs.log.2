@@ -1,0 +1,236 @@
+[2020-10-07T10:19:30.639] [INFO] default - Server is running on 5000
+[2020-10-07T10:19:30.647] [INFO] default - Connection Success...
+[2020-10-07T10:19:30.829] [ERROR] default - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1
+    at Query.Sequence._packetToError (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:201:25)
+    at D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:676:28
+    at Array.forEach (<anonymous>)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:674:20)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:123:8) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM sis_community_attendence  WHERE emp_id=8 date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'"
+}
+[2020-10-07T10:19:30.832] [ERROR] default - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1
+    at Query.Sequence._packetToError (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:201:25)
+    at D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:676:28
+    at Array.forEach (<anonymous>)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:674:20)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:123:8) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM sis_community_attendence  WHERE emp_id=12 date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'"
+}
+[2020-10-07T10:19:48.380] [ERROR] default - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1
+    at Query.Sequence._packetToError (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:201:25)
+    at D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:676:28
+    at Array.forEach (<anonymous>)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:674:20)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:123:8) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM sis_community_attendence  WHERE emp_id=8 date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'"
+}
+[2020-10-07T10:19:48.381] [ERROR] default - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1
+    at Query.Sequence._packetToError (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:201:25)
+    at D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:676:28
+    at Array.forEach (<anonymous>)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:674:20)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:123:8) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM sis_community_attendence  WHERE emp_id=12 date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'"
+}
+[2020-10-07T10:19:58.994] [INFO] default - Server is running on 5000
+[2020-10-07T10:19:59.001] [INFO] default - Connection Success...
+[2020-10-07T10:19:59.184] [ERROR] default - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1
+    at Query.Sequence._packetToError (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:201:25)
+    at D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:676:28
+    at Array.forEach (<anonymous>)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:674:20)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:123:8) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM sis_community_attendence  WHERE emp_id=8 date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'"
+}
+[2020-10-07T10:19:59.187] [ERROR] default - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1
+    at Query.Sequence._packetToError (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:201:25)
+    at D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:676:28
+    at Array.forEach (<anonymous>)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:674:20)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:123:8) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM sis_community_attendence  WHERE emp_id=12 date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'"
+}
+[2020-10-07T10:20:54.188] [ERROR] default - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1
+    at Query.Sequence._packetToError (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:201:25)
+    at D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:676:28
+    at Array.forEach (<anonymous>)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:674:20)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:123:8) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM sis_community_attendence  WHERE emp_id=8 date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'"
+}
+[2020-10-07T10:20:54.189] [ERROR] default - Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1
+    at Query.Sequence._packetToError (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Connection.query (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:201:25)
+    at D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:676:28
+    at Array.forEach (<anonymous>)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\routers\supervisor\supervisor.js:674:20)
+    at Query.<anonymous> (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:525:10)
+    at Query._callback (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\Connection.js:491:16)
+    at Query.Sequence.end (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (D:\MGC 16-09-2020\node-server\node_modules\mysql\lib\protocol\sequences\Query.js:123:8) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: "SELECT * FROM sis_community_attendence  WHERE emp_id=12 date_format(date, '%c')='10' AND date_format(date, '%Y')='2020'"
+}
